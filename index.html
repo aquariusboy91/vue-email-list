@@ -10,7 +10,10 @@
 </head>
 <body>
     <div id="app">
-        {{ email }}
+        <ul>
+            <li v-for="item in email"> {{item.text}} </li>
+        </ul>
+        
       </div>
     <script src="js/script.js"></script>
 </body>
