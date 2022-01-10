@@ -8,7 +8,11 @@ var app = new Vue({
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then(response => {
               this.email.push({ text : response.data.response});
-            });
+
+            })
+            .catch(function (error) {
+                console.log(error);
+              });
           }
       }
   })
